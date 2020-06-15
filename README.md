@@ -8,7 +8,8 @@ Repository of my day-to-day notes as SysAdmin/Projects.
 
 ## Projects
 
--   Raspberry 4B
+-   [Raspberry 4B](https://github.com/rootzilopochtli/sysadmin-notes/tree/master/raspberry4b)
+IN PROGRESS
 
 ## Author Information
 
