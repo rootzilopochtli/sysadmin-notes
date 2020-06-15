@@ -4,7 +4,7 @@ Repository of my day-to-day notes as SysAdmin/Projects.
 
 ## Notes
 
-- Barry Allen Notes
+- [Barry Allen Notes](file:///BarryAllenNotes.md)
 
 ## Projects
 
