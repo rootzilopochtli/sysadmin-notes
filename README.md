@@ -2,6 +2,10 @@
 
 Repository of my day-to-day notes as SysAdmin/Projects.
 
+## Configuration Files
+
+- Some notes about sysadmin tools [configuration files](https://github.com/rootzilopochtli/sysadmin-notes/tree/master/conf).
+
 ## Notes
 
 - [Barry Allen Notes](https://github.com/rootzilopochtli/sysadmin-notes/blob/master/BarryAllenNotes.md)
@@ -9,7 +13,12 @@ Repository of my day-to-day notes as SysAdmin/Projects.
 ## Projects
 
 -   [Raspberry 4B](https://github.com/rootzilopochtli/sysadmin-notes/tree/master/raspberry4b)  
-IN PROGRESS
+
+_IN PROGRESS_
+
+## Scripts
+
+- Some useful [scripts](https://github.com/rootzilopochtli/sysadmin-notes/tree/master/scripts).
 
 ## Author Information
 
