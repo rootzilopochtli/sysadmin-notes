@@ -1,6 +1,6 @@
 # SysAdmin Notes
 
-Repository of my day-to-day notes as SysAdmin/Projects.
+Repository of my day-to-day notes as SysAdmin & Projects.
 
 ## Configuration Files
 
@@ -10,12 +10,12 @@ Repository of my day-to-day notes as SysAdmin/Projects.
 
 - [Barry Allen Notes](https://github.com/rootzilopochtli/sysadmin-notes/blob/master/BarryAllenNotes.md)
 - [RHEL8](https://github.com/rootzilopochtli/sysadmin-notes/blob/master/rhel8.md)
+- [VMs](https://github.com/rootzilopochtli/sysadmin-notes/blob/master/vms.md)
 
 ## Projects
 
--   [Raspberry 4B](https://github.com/rootzilopochtli/sysadmin-notes/tree/master/raspberry4b)  
+- [Raspberry 4B](https://github.com/rootzilopochtli/sysadmin-notes/tree/master/raspberry4b)  
 
-  _IN PROGRESS_
 
 ## Scripts
 
