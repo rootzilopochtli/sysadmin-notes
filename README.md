@@ -9,12 +9,13 @@ Repository of my day-to-day notes as SysAdmin/Projects.
 ## Notes
 
 - [Barry Allen Notes](https://github.com/rootzilopochtli/sysadmin-notes/blob/master/BarryAllenNotes.md)
+- [RHEL8](https://github.com/rootzilopochtli/sysadmin-notes/blob/master/rhel8.md)
 
 ## Projects
 
 -   [Raspberry 4B](https://github.com/rootzilopochtli/sysadmin-notes/tree/master/raspberry4b)  
 
-_IN PROGRESS_
+  _IN PROGRESS_
 
 ## Scripts
 
