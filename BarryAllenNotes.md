@@ -21,4 +21,4 @@ ls | xargs du -sk | sort -n | awk '{ print $2 }' | xargs du -sh | tail -10
 git clone https://github.com/aristocratos/bashtop.git
 ```
 
-![Image of bashtop](https://)
+![bashtop](https://github.com/rootzilopochtli/sysadmin-notes/blob/master/images/bashtop.png?raw=true)
