@@ -88,6 +88,24 @@ sudo virsh console vm01
 
 **NOTE: To escape from console use the key combination _ctrl+5_.**
 
+## Fix Errors
+
+### virsh: cannot undefine domain with NVRAM
+
+```
+virsh undefine centos
+error: Failed to undefine domain centos 
+error: Requested operation is not valid: cannot undefine domain with nvram
+```
+
+**nvram** is a _device_ that is allowed to change its [address](https://libvirt.org/formatdomain.html#elementsNVRAM).
+
+- **Solution**
+
+```
+virsh undefine --nvram centos 
+```
+
 
 ## References
 
