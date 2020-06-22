@@ -1,0 +1,105 @@
+---
+# Playbook for setting up beaker machine
+- name: Setting up beaker machine with CentOS
+  hosts: servers
+  remote_user: root
+  serial: 1
+
+  tasks:
+
+    - name: Install the required packages
+      yum:
+        name: "{{ item }}"
+        state: latest
+      with_items:
+        - xorg-x11-xauth
+        - libvirt
+        - libvirt-client
+        - libvirt-daemon
+        - libvirt-daemon-kvm
+        - libguestfs-tools
+        - virt-manager
+        - virt-install
+        - firefox
+        - screen
+      tags:
+        - preparing
+
+    - name: Upgrade all packages
+      yum:
+        name: "*"
+        state: latest
+      register: systemupgrade
+      tags:
+        - preparing
+
+    - name: Restart beaker machine
+      command: shutdown -r +1 "Ansible packages upgrade triggered"
+      async: 1
+      poll: 0
+      ignore_errors: true
+      when: systemupgrade.changed
+
+    - name: Wait for server to restart
+      wait_for:
+        host: "{{ inventory_hostname }}"
+        port: 22
+        state: started
+        delay: 180
+        timeout: 600
+      delegate_to: localhost
+      when: systemupgrade.changed
+
+    - name: Umount home directory
+      shell: "umount /home"
+
+    - name: Reduce the home logical volume to 1024m
+      lvol:
+        vg: "{{ ansible_lvm.lvs.home.vg }}"
+        lv: home
+        size: 1024
+        force: yes
+      tags:
+        - customize
+
+    - name: Create the images logical volume with the size of all remaining space in the volume group
+      lvol:
+        vg: "{{ ansible_lvm.lvs.home.vg }}"
+        lv: images
+        size: 100%FREE
+      tags:
+        - customize
+
+    - name: Create a xfs filesystem on lv-home
+      filesystem:
+        fstype: xfs
+        dev: /dev/{{ ansible_lvm.lvs.home.vg }}/home
+        force: yes
+      tags:
+        - customize
+
+    - name: Create a xfs filesystem on lv-images
+      filesystem:
+        fstype: xfs
+        dev: /dev/{{ ansible_lvm.lvs.home.vg }}/images
+      tags:
+        - customize
+
+    - name: Mount /home on lv-home
+      mount:
+        path: /home
+        src: /dev/{{ ansible_lvm.lvs.home.vg }}/home
+        fstype: xfs
+        state: mounted
+      tags:
+        - customize
+
+    - name: Mount /var/lib/libvirt/images on lv images
+      mount:
+        path: /var/lib/libvirt/images
+        src: /dev/{{ ansible_lvm.lvs.home.vg }}/images
+        fstype: xfs
+        state: mounted
+        boot: yes
+      tags:
+        - customize

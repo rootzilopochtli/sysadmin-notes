@@ -2,6 +2,10 @@
 
 Repository of my day-to-day notes as SysAdmin & Projects.
 
+## Ansible Playbooks
+
+- Some useful [ansible playbooks](https://github.com/rootzilopochtli/sysadmin-notes/tree/master/ansible-playbooks).
+
 ## Configuration Files
 
 - Some notes about sysadmin tools [configuration files](https://github.com/rootzilopochtli/sysadmin-notes/tree/master/conf).
