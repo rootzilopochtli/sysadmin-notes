@@ -19,7 +19,7 @@ Repository of my day-to-day notes as SysAdmin & Projects.
 
 ## Projects
 
-- [Raspberry 4B](https://github.com/rootzilopochtli/sysadmin-notes/blob/master/raspberry4b/RaspberryPiSetupNotes.md)  
+- [Raspberry 4B](https://github.com/rootzilopochtli/sysadmin-notes/tree/master/raspberry4b)  
 
 
 ## Scripts
