@@ -14,6 +14,12 @@ awk '$4~/(^|,)ro($|,)/' /proc/mounts
 ls | xargs du -sk | sort -n | awk '{ print $2 }' | xargs du -sh | tail -10
 ```
 
+### nmap
+
+- Scan network range
+```
+nmap -SP 192.168.0.0/24
+```
 
 ### bashtop
 
