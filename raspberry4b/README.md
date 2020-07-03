@@ -2,6 +2,8 @@
 
 Project notes with Raspberry 4B
 
+- [Raspberry Pi Setup Notes](https://github.com/rootzilopochtli/sysadmin-notes/blob/master/raspberry4b/RaspberryPiSetupNotes.md)
+
 ## Projects
 
 TODO
