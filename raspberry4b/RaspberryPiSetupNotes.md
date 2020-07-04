@@ -6,9 +6,9 @@
 
 Currently there's no CentOS version of aarch64 for the Raspberry pi so we have to build our kernel and dtb files from the Raspberry Pi Linux sources.
 
-### Fedora Server
+### Fedora Workstation
 
-**TODO**
+- [Index of /pub/fedora-secondary/development/rawhide/Workstation/aarch64](https://dl.fedoraproject.org/pub/fedora-secondary/development/rawhide/Workstation/aarch64/)
 
 ### Gentoo
 
