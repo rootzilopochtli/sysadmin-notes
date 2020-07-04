@@ -14,3 +14,5 @@ TODO
 - [Build a Kubernetes cluster with the Raspberry Pi](https://opensource.com/article/20/6/kubernetes-raspberry-pi)
 - [Install a Kubernetes load balancer on your Raspberry Pi homelab with MetalLB](https://opensource.com/article/20/7/homelab-metallb)
 - [Android on the Raspberry Pi using LineageOS](https://pimylifeup.com/raspberry-pi-android-lineageos/)
+- [Apache CloudStack on RaspberryPi4 with KVM](https://www.shapeblue.com/apache-cloudstack-on-raspberrypi4-with-kvm/)
+- [Set up a Tor proxy with Raspberry Pi to control internet traffic](https://opensource.com/article/20/4/tor-proxy-raspberry-pi)
