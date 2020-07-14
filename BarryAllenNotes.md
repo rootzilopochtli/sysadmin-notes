@@ -1,8 +1,10 @@
 # Barry Allen Notes
 
 ## What's this about?  
-Tips, hacks and quick short commands like the flash
----
+
+_Tips, hacks and quick short commands like [the flash](https://www.dccomics.com/characters/the-flash)._
+
+- [Markdown cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf).
 
 - **Check for read only filesystem**
 ```
