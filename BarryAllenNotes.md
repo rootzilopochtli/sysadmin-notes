@@ -18,6 +18,15 @@ awk '$4~/(^|,)ro($|,)/' /proc/mounts
 ls | xargs du -sk | sort -n | awk '{ print $2 }' | xargs du -sh | tail -10
 ```
 
+- **Enable service/port in firewalld**
+```
+firewall-cmd --permanent --add-port={22/tcp,80/tcp,443/tcp,8080/tcp,8443/tcp,9990/tcp,9999/tcp}
+firewall-cmd --permanent --add-service={http,https,ssh}
+systemctl restart firewalld.service
+
+firewall-cmd --permanent --zone=public --list-all
+```
+
 ### nmap
 
 - Scan network range
