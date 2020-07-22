@@ -13,6 +13,7 @@ Repository of my day-to-day notes as SysAdmin & Projects.
 ## Notes
 
 - [Barry Allen Notes](https://github.com/rootzilopochtli/sysadmin-notes/blob/master/BarryAllenNotes.md)
+- [Git](https://github.com/rootzilopochtli/sysadmin-notes/blob/master/git.md)
 - [RHEL8](https://github.com/rootzilopochtli/sysadmin-notes/blob/master/rhel8.md)
 - [Scripting](https://github.com/rootzilopochtli/sysadmin-notes/blob/master/scripting.md)
 - [VMs](https://github.com/rootzilopochtli/sysadmin-notes/blob/master/vms.md)
