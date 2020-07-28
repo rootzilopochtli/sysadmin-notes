@@ -106,6 +106,23 @@ error: Requested operation is not valid: cannot undefine domain with nvram
 virsh undefine --nvram centos 
 ```
 
+## Export VM
+
+- Copy qcow2 file from <code>/var/lib/libvirt/images</code> to same directory on destination host
+
+- Create a dump xml from domain to export
+
+```
+sudo virsh dumpxml VMNAME > vmname.xml
+```
+
+- On the destination host run
+
+```
+sudo virsh define vmname.xml
+```
+
+- Start VM
 
 ## References
 
