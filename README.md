@@ -16,6 +16,7 @@ Repository of my day-to-day notes as SysAdmin & Projects.
 - [Git](https://github.com/rootzilopochtli/sysadmin-notes/blob/master/git.md)
 - [RHEL8](https://github.com/rootzilopochtli/sysadmin-notes/blob/master/rhel8.md)
 - [Scripting](https://github.com/rootzilopochtli/sysadmin-notes/blob/master/scripting.md)
+- [tlog](https://github.com/rootzilopochtli/sysadmin-notes/blob/master/tlog.md)
 - [VMs](https://github.com/rootzilopochtli/sysadmin-notes/blob/master/vms.md)
 
 ## Projects
