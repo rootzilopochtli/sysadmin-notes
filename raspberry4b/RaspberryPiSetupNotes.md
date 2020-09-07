@@ -8,6 +8,7 @@ Currently there's no CentOS version of aarch64 for the Raspberry pi so we have t
 
 ### Fedora Workstation
 
+- [Install Fedora on a Raspberry Pi 3](https://fedoramagazine.org/install-fedora-on-a-raspberry-pi/)
 - [Index of /pub/fedora-secondary/development/rawhide/Workstation/aarch64](https://dl.fedoraproject.org/pub/fedora-secondary/development/rawhide/Workstation/aarch64/)
 
 ### Gentoo
