@@ -31,7 +31,7 @@ firewall-cmd --permanent --zone=public --list-all
 
 - Scan network range
 ```
-nmap -SP 192.168.0.0/24
+nmap -sP 192.168.0.0/24
 ```
 
 ### bashtop
