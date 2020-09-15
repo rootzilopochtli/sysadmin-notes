@@ -14,6 +14,7 @@ Repository of my day-to-day notes as SysAdmin & Projects.
 
 - [Barry Allen Notes](https://github.com/rootzilopochtli/sysadmin-notes/blob/master/BarryAllenNotes.md)
 - [Git](https://github.com/rootzilopochtli/sysadmin-notes/blob/master/git.md)
+- [MariaDB](https://github.com/rootzilopochtli/sysadmin-notes/blob/master/MariaDB.md)
 - [RHEL8](https://github.com/rootzilopochtli/sysadmin-notes/blob/master/rhel8.md)
 - [Scripting](https://github.com/rootzilopochtli/sysadmin-notes/blob/master/scripting.md)
 - [tlog](https://github.com/rootzilopochtli/sysadmin-notes/blob/master/tlog.md)
