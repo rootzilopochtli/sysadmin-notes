@@ -12,7 +12,7 @@
 &num; mysqld&lowbar;safe --skip-grant-tables --skip-networking &amp;
 <br>
 <i>Access to MariaDB and change root password</i>
-systemctl stop mariadb
+&num; systemctl stop mariadb
 &num; mysql -u root
 
 MariaDB [(none)]> use mysql;
@@ -29,6 +29,5 @@ MariaDB [mysql]> exit
 &num; systemctl start mariadb
 <br>
 <i>Verify root password change</i>
-&num; mysql -u root
-<br>
+&num; mysql -u root -p
 </pre>
