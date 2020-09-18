@@ -1,5 +1,6 @@
 # MariaDB Notes
 
+- [Install MariaDB-client only](https://mariadb.com/kb/en/yum/)
 - Reset root password
 <pre>
 <i>Inspect the status from MariaDB or MySQL</i>
