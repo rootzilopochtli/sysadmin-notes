@@ -128,3 +128,4 @@ sudo virsh define vmname.xml
 
 [How to Resize a qcow2 Image and Filesystem with Virt-Resize](https://fatmin.com/2016/12/20/how-to-resize-a-qcow2-image-and-filesystem-with-virt-resize/)  
 [Modifying the Red Hat Enterprise Linux OpenStack Platform Overcloud Image with virt-customize](https://access.redhat.com/articles/1556833)
+[Use Ubuntu Cloud Image with KVM](https://medium.com/@art.vasilyev/use-ubuntu-cloud-image-with-kvm-1f28c19f82f8)
