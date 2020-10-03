@@ -124,6 +124,81 @@ sudo virsh define vmname.xml
 
 - Start VM
 
+## Using cloud-init
+
+1. [Download cloud image](#download)
+
+2. [Resize qcow2 image](#resize-a-qcow2-image)
+
+3. With cloud-init: Configure hostname, add a user and grant him access by ssh and change the root password:
+
+   * Create meta-data:
+
+   ```
+   cat &gt; meta-data &lt;&lt;EOF
+   local-hostname: vm02.rootzilopochtli.lab
+   EOF
+   ```
+
+   * Create user-data:
+
+   ```
+   $ cat &gt; user-data &lt;&lt;EOF
+   # cloud-config
+
+   users
+   users:
+   - name: dexter
+     ssh_authorized_keys:
+       - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQD...
+     sudo: ['ALL=(ALL) NOPASSWD:ALL']
+     groups: sudo
+     shell: /bin/bash
+
+   chpasswd:
+     list: |
+       root:password
+     expire: False
+
+  runcmd:
+    - echo "AllowUsers ubuntu" >> /etc/ssh/sshd_config
+    - restart ssh
+   ```
+
+   * Create a disk to attach with cloud-init configuration:
+
+   ```
+   $ sudo genisoimage  -output /var/lib/libvirt/images/vm02-cidata.iso -volid cidata -joliet -rock user-data meta-data
+   ```
+
+4. Launch VM
+
+```
+$ sudo virt-install --name vm02 --memory 2048 --vcpus 2 --disk /var/lib/libvirt/images/vm02.qcow2 --disk /var/lib/libvirt/images/vm02-cidata.iso,device=cdrom --import --network network=default --noautoconsole
+```
+
+5. Access the VM
+
+   * Verify that the vm is running:
+
+   ```
+   $ sudo virsh list
+    Id   Name     State
+    ------------------------
+    1    vm02     running
+   ```
+
+   * Get his IP address
+
+   ```
+   $ sudo virsh domifaddr vm02
+     Name       MAC address          Protocol     Address
+    -------------------------------------------------------------------------------
+     vnet0      52:54:00:19:54:79    ipv4         192.168.122.186/24
+   ```
+
+   * Testing access with ssh
+
 ## References
 
 - [How to Resize a qcow2 Image and Filesystem with Virt-Resize](https://fatmin.com/2016/12/20/how-to-resize-a-qcow2-image-and-filesystem-with-virt-resize/)  
