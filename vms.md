@@ -57,7 +57,9 @@ virt-filesystems --long -h --all -a image.qcow2
 - Setting the qcow2 image
 
 ```
-sudo virt-customize -a /var/lib/libvirt/images/image.qcow2 --hostname vm01.rootzilopochtli.lab --root-password password:rootpw --ssh-inject 'root:file:labkey.pub' --uninstall cloud-init --selinux-relabel
+sudo virt-customize -a /var/lib/libvirt/images/image.qcow2 --hostname vm01.rootzilopochtli.lab \
+--root-password password:rootpw --ssh-inject 'root:file:labkey.pub' --uninstall cloud-init \
+--selinux-relabel
 ```
 
 ## Configuring VM
@@ -67,7 +69,8 @@ sudo virt-customize -a /var/lib/libvirt/images/image.qcow2 --hostname vm01.rootz
 - Installing the VM
 
 ```
-sudo virt-install --name vm01 --memory 1024 --vcpus 1 --disk /var/lib/libvirt/images/image.qcow2 --import --os-type linux --os-variant generic --noautoconsole
+sudo virt-install --name vm01 --memory 1024 --vcpus 1 --disk /var/lib/libvirt/images/image.qcow2 --import \
+--os-type linux --os-variant generic --noautoconsole
 ```
 
 **Note: If you want to set the exact os-variant, check with the osinfo-query command:**
@@ -175,7 +178,8 @@ sudo virsh define vmname.xml
 4. Launch VM
 
 ```
-$ sudo virt-install --name vm02 --memory 2048 --vcpus 2 --disk /var/lib/libvirt/images/vm02.qcow2 --disk /var/lib/libvirt/images/vm02-cidata.iso,device=cdrom --import --network network=default --noautoconsole
+$ sudo virt-install --name vm02 --memory 2048 --vcpus 2 --disk /var/lib/libvirt/images/vm02.qcow2 \
+--disk /var/lib/libvirt/images/vm02-cidata.iso,device=cdrom --import --network network=default --noautoconsole
 ```
 
 5. Access the VM
