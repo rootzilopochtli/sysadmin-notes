@@ -135,7 +135,7 @@ sudo virsh define vmname.xml
    * Create meta-data:
 
    ```
-   cat &gt; meta-data &lt;&lt;EOF
+   cat > meta-data <<EOF
    local-hostname: vm02.rootzilopochtli.lab
    EOF
    ```
@@ -143,7 +143,7 @@ sudo virsh define vmname.xml
    * Create user-data:
 
    ```
-   $ cat &gt; user-data &lt;&lt;EOF
+   $ cat > user-data <<EOF
    # cloud-config
 
    users
@@ -160,9 +160,10 @@ sudo virsh define vmname.xml
        root:password
      expire: False
 
-  runcmd:
-    - echo "AllowUsers ubuntu" >> /etc/ssh/sshd_config
-    - restart ssh
+   runcmd:
+     - echo "AllowUsers ubuntu" >> /etc/ssh/sshd_config
+     - restart ssh
+   EOF
    ```
 
    * Create a disk to attach with cloud-init configuration:
