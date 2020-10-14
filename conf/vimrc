@@ -1,6 +1,7 @@
 set ts=2
 set et
 set ai
+autocmd FileType gitcommit setlocal spell textwidth=72 "set up highlighting on your commits to show you where the 50 character limit for the subject and the longer 72 character limit for subsequent lines in the commit end
 au BufNewFile,BufRead *.yaml,*.yml so ~/.vim/yaml.vim
 let g:jedi#auto_initialization = 1
 python3 from powerline.vim import setup as powerline_setup
