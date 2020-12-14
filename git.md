@@ -27,6 +27,16 @@ git checkout acalleja/fixch08s01
 git fetch
 ```
 
+- Switch to a remote branch
+  - Get a list of all branches from the remote
+  ```
+  git pull
+  ```
+  - Switch to the branch
+  ```
+  git checkout --track origin/remote-branch-name
+  ```
+
 - Adding changes to repo
 ```
 git add [file(s) or directory]
