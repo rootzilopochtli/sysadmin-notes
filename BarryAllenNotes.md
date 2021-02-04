@@ -31,6 +31,20 @@ systemctl restart firewalld.service
 firewall-cmd --permanent --zone=public --list-all
 ```
 
+### sudo
+
+- Enable insults on `/etc/sudoers`
+-- [Where are sudo's insults stored?](https://askubuntu.com/questions/837558/where-are-sudos-insults-stored)
+```
+Defaults   insults
+```
+
+- Enable sudo warning forever: create a `/etc/sudoers.d/privacy` file
+-- [Keeping the fancy sudo warning forever](https://superuser.com/questions/500119/keeping-the-fancy-sudo-warning-forever)
+```
+Defaults        lecture = always
+```
+
 ### nmap
 
 - Scan network range
