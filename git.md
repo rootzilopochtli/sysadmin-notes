@@ -71,6 +71,19 @@ $ pre-commit run --all-files
 git push -u origin acalleja/fixch08s01
 ```
 
+- Update branch from master
+  - merge (this creates an extra commit for merge)
+    ```
+    git checkout acalleja/fixch02s01
+    git merge origin/master
+    git push origin acalleja/fixch02s01
+    ```
+  - rebase
+    ```
+    git fetch
+    git rebase origin/master
+    ```
+
 - Delete branch
   - Remotely
     ```
