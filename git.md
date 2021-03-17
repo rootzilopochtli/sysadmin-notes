@@ -84,6 +84,12 @@ git push -u origin acalleja/fixch08s01
     git rebase origin/master
     ```
 
+    - rebase → resolve conflicts with strategy and force merge avoiding a potential collision with an upstream change
+      ```
+      git rebase -X theirs origin/master
+      git push --force-with-lease origin acalleja/fixch02s01
+      ```
+
 - Delete branch
   - Remotely
     ```
