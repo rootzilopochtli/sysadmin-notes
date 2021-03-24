@@ -100,7 +100,7 @@ git push -u origin acalleja/fixch08s01
     git branch -d acalleja/fixch08s01
     ```
 
-- Create a pull request in GitHub
+- Create a pull request in GitHub (Upstream collaboration)
   - Fork a repo
 
   - Clone the repo
