@@ -100,3 +100,42 @@ git push -u origin acalleja/fixch08s01
     git branch -d acalleja/fixch08s01
     ```
 
+- Create a pull request in GitHub
+  - Fork a repo
+
+  - Clone the repo
+
+  - Create a new branch
+    ```
+    git checkout -b new_branch
+    ```
+
+  - Create a new remote for the <i>upstream</i> repo
+    ```
+    git remote add upstream https://github.com/upstream_user/repo_forked
+    ```
+
+  - Perform changes to the code (add and commit)
+
+  - Push your branch
+    ```
+    git push -u origin new_branch
+    ```
+
+**NOTE: If authentication is required, enter the corresponding values:**
+<pre>
+Username for 'https://github.com': <i>username</i>
+Password for 'https://AlexCallejas@github.com': <i>Personal access token</i>
+</pre>
+
+  - The output indicates the link to generate the pull request
+    ```
+    remote:
+    remote: Create a pull request for 'new_branch' on GitHub by visiting:
+    remote:      https://github.com/rootzilopochtli/repo_forked/pull/new/new_branch
+    remote:
+    ```
+
+  - On GitHub link, click on **Compare & pull request** button, and **Create pull request** to send the PR to upstream.
+  
+  - This allows the repo's maintainers to review your contribution. From here, they can merge it if it is good, or they may ask you to make some changes.
