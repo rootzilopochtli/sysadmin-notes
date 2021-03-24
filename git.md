@@ -122,11 +122,11 @@ git push -u origin acalleja/fixch08s01
     git push -u origin new_branch
     ```
 
-**NOTE: If authentication is required, enter the corresponding values:**
-<pre>
-Username for 'https://github.com': <i>username</i>
-Password for 'https://AlexCallejas@github.com': <i>Personal access token</i>
-</pre>
+    **NOTE: If authentication is required, enter the corresponding values:**
+    <pre>
+    Username for 'https://github.com': <i>username</i>
+    Password for 'https://AlexCallejas@github.com': <i>Personal access token</i>
+    </pre>
 
   - The output indicates the link to generate the pull request
     ```
