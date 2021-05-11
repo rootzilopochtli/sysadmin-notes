@@ -2,6 +2,11 @@
 
 _Some notes about git, because I always forget it._
 
+- Authenticate on GitHub
+```
+ssh -T git@github.com
+```
+
 - Clone repository
 ```
 git clone [repository.git]
