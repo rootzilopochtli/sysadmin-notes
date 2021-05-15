@@ -1,10 +1,52 @@
 # Git Notes
 
-_Some notes about git, because I always forget it._
+>_Some notes about git, because I always forget it._
+
+---
+## Links and references
+
+- [Git Docs](https://git-scm.com/doc)
+- [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+- [Markdown cheatsheet online](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+- [2FA give problems when pushing to GitHub](https://stackoverflow.com/questions/40950497/2fa-give-problems-when-pushing-to-github)
+
+---
 
 - Authenticate on GitHub
 ```
 ssh -T git@github.com
+```
+
+- Create local repository
+```
+mkdir my-repo && cd my-repo
+git init
+```
+
+- Add all files
+```
+git add .
+```
+
+- Add and commit
+```
+git commit -am "Commit message"
+```
+
+- Add remote repository
+```
+git remote add origin https://github.com/AlexCallejas/my-repo.git
+```
+**NOTE: As a best practice, the local and remote repo should have the same name as the directory created.**
+
+- Check remotes
+```
+git remote -v
+```
+
+- Check logs on single line track
+```
+git log --oneline --graph
 ```
 
 - Clone repository
