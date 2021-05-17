@@ -23,6 +23,11 @@ mkdir my-repo && cd my-repo
 git init
 ```
 
+- Rename master branch
+```
+git branch -m master main
+```
+
 - Add all files
 ```
 git add .
