@@ -43,7 +43,7 @@ virt-filesystems --long -h --all -a image.qcow2
 - Grow <code>/dev/vda3</code> 
 
 ```
-virt-resize --expand /dev/sda1 image-orig.qcow2 image.qcow2
+virt-resize --expand /dev/vda3 image-orig.qcow2 image.qcow2
 ```
 
 - Inspect new disk
