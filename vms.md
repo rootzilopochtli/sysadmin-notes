@@ -32,9 +32,15 @@ qemu-img resize image.qcow2 +20G
 cp image.qcow2 image-orig.qcow2
 ```
 
-**NOTE: In this example /dev/sda1 is not the /boot partition. So be careful you are growing the correct partitions on your qcow.**
+**NOTE: In this example /dev/vda3 is not the /boot partition. So be careful you are growing the correct partitions on your qcow.**
 
-- Grow <code>/dev/sda1</code> 
+- Check the partitions to ensure the filesystem to be grown
+
+```
+virt-filesystems --long -h --all -a image.qcow2
+```
+
+- Grow <code>/dev/vda3</code> 
 
 ```
 virt-resize --expand /dev/sda1 image-orig.qcow2 image.qcow2
