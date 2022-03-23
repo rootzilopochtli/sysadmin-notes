@@ -12,6 +12,48 @@ Useful sites for downloading qcow2 images:
 
 ## Preparation of VM
 
+### Creating a new virtual network for public access
+
+1. Create a <code>bridged-network.xml</code> configuration file:
+
+```
+<network>
+    <name>bridged-network</name>
+    <forward mode="bridge" />
+    <bridge name="br0" />
+</network>
+```
+
+2. Define as virtual network:
+
+```
+$ sudo virsh net-define bridged-network.xml
+```
+
+3. Activate and set as auto-started:
+
+```
+$ sudo virsh net-start bridged-network
+$ sudo virsh net-autostart bridged-network
+```
+
+4. Verify
+
+```
+$ sudo virsh net-list
+Name              State    Autostart   Persistent
+----------------------------------------------------
+bridged-network   active   yes         yes
+default           active   yes         yes
+```
+
+5. Create/Import VM with <code>bridged-network</code> as network:
+
+```
+$ sudo virt-install --name vmlab --memory 4096 --vcpus 2 --disk /var/lib/libvirt/images/vmlab.qcow2 \
+--import --os-variant centos8 --network network=bridged-network --noautoconsole
+```
+
 ### Resize a qcow2 image
 
 - Check image info
@@ -215,3 +257,4 @@ $ sudo virt-install --name vm02 --memory 2048 --vcpus 2 --disk /var/lib/libvirt/
 - [How to Resize a qcow2 Image and Filesystem with Virt-Resize](https://fatmin.com/2016/12/20/how-to-resize-a-qcow2-image-and-filesystem-with-virt-resize/)  
 - [Modifying the Red Hat Enterprise Linux OpenStack Platform Overcloud Image with virt-customize](https://access.redhat.com/articles/1556833)
 - [Use Ubuntu Cloud Image with KVM](https://medium.com/@art.vasilyev/use-ubuntu-cloud-image-with-kvm-1f28c19f82f8)
+- [How to use bridged networking with libvirt and KVM](https://linuxconfig.org/how-to-use-bridged-networking-with-libvirt-and-kvm)
