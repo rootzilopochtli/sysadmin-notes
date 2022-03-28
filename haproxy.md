@@ -22,7 +22,7 @@ Install haproxy
 
 ### Configure service
 
-Use [`haproxy.cfg.template`](https://github.com/CursoIntegralLinux/mai-notes/blob/main/haproxy/haproxy.cfg.template) as haproxy config file.
+Use [`haproxy.cfg.template`](https://github.com/rootzilopochtli/sysadmin-notes/blob/master/haproxy/haproxy.cfg.template) as haproxy config file.
 
 ```
 # cp haproxy.cfg.template /etc/haproxy/haproxy.cfg
@@ -84,7 +84,7 @@ Enable service
 
 ### Configure service
 
-Use [`index.html.template`](https://github.com/CursoIntegralLinux/mai-notes/blob/main/haproxy/index.html.template) as index file.
+Use [`index.html.template`](https://github.com/rootzilopochtli/sysadmin-notes/blob/master/haproxy/index.html.template) as index file.
 
 ```
 # cp index.html.template /var/www/html/index.html
