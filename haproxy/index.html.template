@@ -1,0 +1,8 @@
+<html>
+<head><title>Apache is running!</title></head>
+<body>
+<h1>
+Hello from [hostname]
+</h1>
+</body>
+</html>
