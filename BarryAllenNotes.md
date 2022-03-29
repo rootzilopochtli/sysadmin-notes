@@ -58,4 +58,4 @@ nmap -sP 192.168.0.0/24
 git clone https://github.com/aristocratos/bashtop.git
 ```
 
-![bashtop](https://github.com/rootzilopochtli/sysadmin-notes/blob/master/images/bashtop.png?raw=true)
+![bashtop](https://github.com/rootzilopochtli/sysadmin-notes/blob/main/images/bashtop.png)
