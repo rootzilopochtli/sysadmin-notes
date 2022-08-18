@@ -10,6 +10,8 @@ TODO
 
 ## References
 
+- [Updating Raspberry Pi 4 bootloader EEPROM on Fedora](https://gist.github.com/dwrobel/266ad5d4e59b05ea26d8bb6725118578)
+- [RPM Fusion/Howto/RaspberryPi](https://rpmfusion.org/Howto/RaspberryPi)
 - [Modify a disk image to create a Raspberry Pi-based homelab](https://opensource.com/article/20/5/disk-image-raspberry-pi)
 - [Build a Kubernetes cluster with the Raspberry Pi](https://opensource.com/article/20/6/kubernetes-raspberry-pi)
 - [Install a Kubernetes load balancer on your Raspberry Pi homelab with MetalLB](https://opensource.com/article/20/7/homelab-metallb)
