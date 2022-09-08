@@ -141,6 +141,36 @@ sudo virsh console vm01
 
 ## Fix Errors
 
+### virt-customize: warning: random seed could not be set for this type of guest
+
+This error , during customization, causes hostkeys not to be generated; therefore `sshd` will not start:
+
+```
+root@debian:~# systemctl status sshd
+● ssh.service - OpenBSD Secure Shell server
+     Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: e>
+     Active: failed (Result: exit-code) since Thu 2022-09-08 00:35:29 UTC; 32mi>
+       Docs: man:sshd(8)
+             man:sshd_config(5)
+    Process: 528 ExecStartPre=/usr/sbin/sshd -t (code=exited, status=1/FAILURE)
+        CPU: 5ms
+
+Sep 08 00:35:29 debian.rootzilopochtli.lab systemd[1]: ssh.service: Scheduled r>
+Sep 08 00:35:29 debian.rootzilopochtli.lab systemd[1]: Stopped OpenBSD Secure S>
+Sep 08 00:35:29 debian.rootzilopochtli.lab systemd[1]: ssh.service: Start reque>
+Sep 08 00:35:29 debian.rootzilopochtli.lab systemd[1]: ssh.service: Failed with>
+Sep 08 00:35:29 debian.rootzilopochtli.lab systemd[1]: Failed to start OpenBSD >
+root@debian:~# /usr/sbin/sshd
+sshd: no hostkeys available -- exiting.
+```
+
+- Generate hostkeys
+
+```
+root@debian:~# ssh-keygen -A
+ssh-keygen: generating new host keys: RSA DSA ECDSA ED25519
+```
+
 ### virsh: cannot undefine domain with NVRAM
 
 ```
