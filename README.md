@@ -13,6 +13,7 @@ Repository of my day-to-day notes as SysAdmin & Projects.
 ## Notes
 
 - [Barry Allen Notes](https://github.com/rootzilopochtli/sysadmin-notes/blob/main/BarryAllenNotes.md)
+- [Debian](https://github.com/rootzilopochtli/sysadmin-notes/blob/main/debian.md)
 - [CentOS 8 Install](https://github.com/rootzilopochtli/sysadmin-notes/blob/main/CentOSInstall.md)
 - [Fedora](https://github.com/rootzilopochtli/sysadmin-notes/blob/main/fedora.md)
 - [Git](https://github.com/rootzilopochtli/sysadmin-notes/blob/main/git.md)
