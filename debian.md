@@ -2,6 +2,8 @@
 
 Notes about some configurations and tips for Debian.
 
+## Fix Errors
+
 ### Error when connecting via ssh newly installed
 
 ```
