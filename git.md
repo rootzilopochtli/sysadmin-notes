@@ -6,6 +6,7 @@
 ## Links and references
 
 - [Git Docs](https://git-scm.com/doc)
+- [Git Docs - Book](https://git-scm.com/book/en/v2)
 - [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 - [Markdown cheatsheet online](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 - [2FA give problems when pushing to GitHub](https://stackoverflow.com/questions/40950497/2fa-give-problems-when-pushing-to-github)
