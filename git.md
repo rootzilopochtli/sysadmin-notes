@@ -144,6 +144,20 @@ git push -u origin acalleja/fixch08s01
       git push --force-with-lease origin acalleja/fixch02s01
       ```
 
+- Commit history
+  - Basic
+    ```
+    git log
+    ```
+  - Last 2 commits
+    ```
+    git log -2
+    ```
+  - Formatting output
+    ```
+    git log -2 --pretty=format:"%h - %an, %ar : %s"
+    ```
+
 - Delete branch
   - Remotely
     ```
