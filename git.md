@@ -13,10 +13,21 @@
 
 ---
 
-- Authenticate on GitHub
-```
-ssh -T git@github.com
-```
+- Local configuration
+  - User settings
+  ```
+  git config --global user.name "username"
+  git config --global user.email user@your.mail
+  ```
+  - Store username and password
+  ```
+  git config --global credential.helper store
+  git pull
+  ```
+  - Authenticate on GitHub
+  ```
+  ssh -T git@github.com
+  ```
 
 - Create local repository
 ```
